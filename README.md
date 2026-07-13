@@ -4,12 +4,11 @@ Database Design and Query Performance Optimization
 
 ## Project Overview
 
-ActivityHub is a relational database project that simulates a community platform from a database administrator's perspective, where users interact through groups, posts, comments, and events.
+ActivityHub is a relational database project that simulates a community platform from a database administrator's perspective.
 
-Activity logs are collected to support auditing, operational monitoring, and query performance analysis.
+The project focuses on designing a scalable relational database, implementing SQL Server features, and improving query performance through execution plan analysis and index optimization.
 
 The project focuses on:
-
 - Database schema design
 - Normalization
 - Query optimization
@@ -17,3 +16,11 @@ The project focuses on:
 - Index tuning
 - SQL Server administration
 - ASP.NET Core admin application with CRUD functionality
+
+## Goals
+
+- Learn Microsoft SQL Server
+- Practice relational database design
+- Analyze execution plans
+- Optimize query performance
+- Build an ASP.NET Core admin page
