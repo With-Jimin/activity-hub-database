@@ -33,6 +33,12 @@ User records are internally identified using `user_id` as the primary key.
 
 ## GroupMembers
 
+### Composite Primary Key
+
+The combination of `group_id` and `user_id` is used as the primary key.
+
+Each row represents the membership relationship between one user and one group. Since a user cannot join the same group twice, the composite key uniquely identifies each membership record.
+
 ## Posts
 
 Posts store content created by users within groups.
