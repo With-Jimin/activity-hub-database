@@ -13,6 +13,12 @@ This document describes the database schema and the design decisions.
 - EventParticipants
 - ActivityLogs
 
+## Entity Relationship Diagram
+
+The following diagram represents the relationships between the core entities in ActivityHub.
+
+![ActivityHub ERD](./erd.png)
+
 ## Users
 
 ## Groups
