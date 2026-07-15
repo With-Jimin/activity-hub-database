@@ -1,0 +1,8 @@
+IF DB_ID('ActivityHubDB') IS NULL
+BEGIN
+    CREATE DATABASE ActivityHubDB;
+END;
+GO
+
+USE ActivityHubDB;
+GO

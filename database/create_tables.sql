@@ -1,0 +1,16 @@
+USE ActivityHubDB;
+GO
+
+CREATE TABLE Users (
+    user_id INT IDENTITY(1,1) PRIMARY KEY,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    nickname NVARCHAR(50) NOT NULL,
+    status NVARCHAR(20) NOT NULL
+        CONSTRAINT DF_Users_Status DEFAULT 'ACTIVE',
+    created_at DATETIME2(3) NOT NULL
+        CONSTRAINT DF_Users_CreatedAt DEFAULT SYSDATETIME(),
+
+    CONSTRAINT CK_Users_Status
+        CHECK (status IN ('ACTIVE', 'SUSPENDED', 'DEACTIVATED'))
+);
+GO
