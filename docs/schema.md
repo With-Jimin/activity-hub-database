@@ -21,6 +21,14 @@ The following diagram represents the relationships between the core entities in 
 
 ## Users
 
+### Account Identification
+
+ActivityHub assumes an email-based account model.
+
+Each user has a unique email address, which is used as the account identifier. A separate login ID is not included in the initial schema.
+
+User records are internally identified using `user_id` as the primary key.
+
 ## Groups
 
 ## GroupMembers
