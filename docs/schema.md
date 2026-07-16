@@ -81,6 +81,8 @@ A separate `participant_id` is not introduced because the participation record d
 
 ActivityLogs store chronological user activity records for operational monitoring and query performance analysis.
 
+ActivityLogs are intended to be generated automatically by the application layer when users perform actions. Therefore, no initial seed data is provided for this table.
+
 ### Activity Target
 
 The `target_type` and `target_id` columns are used to identify the object associated with an activity.
