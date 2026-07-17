@@ -1,0 +1,3 @@
+-- Large-scale test data
+-- This script will generate a large dataset
+-- for performance testing and index optimization.
