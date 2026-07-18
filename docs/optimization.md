@@ -143,11 +143,11 @@ As a result, CPU time decreased while the overall query became more efficient.
 
 #### Before Index
 
-![Before Execution Plan](images/before_execution_plan.png)
+![Before Execution Plan](../images/before_execution_plan.png)
 
 #### After Index
 
-![After Execution Plan](images/after_execution_plan.png)
+![After Execution Plan](../images/after_execution_plan.png)
 
 ### Key Changes
 
