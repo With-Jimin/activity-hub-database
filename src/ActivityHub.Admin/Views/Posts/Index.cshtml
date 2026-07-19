@@ -1,0 +1,42 @@
+@model IEnumerable<ActivityHub.Admin.Models.Post>
+
+@{
+    ViewData["Title"] = "Posts";
+}
+
+<h1>Posts</h1>
+
+<p>ActivityHubDB의 게시글 목록입니다.</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Post ID</th>
+            <th>Group ID</th>
+            <th>Author ID</th>
+            <th>Title</th>
+            <th>Created At</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var post in Model)
+        {
+            <tr>
+                <td>@post.PostId</td>
+                <td>@post.GroupId</td>
+                <td>@post.AuthorId</td>
+                <td>@post.Title</td>
+                <td>@post.CreatedAt</td>
+                <td>
+                    <a asp-action="Details"
+                       asp-route-id="@post.PostId"
+                       class="btn btn-sm btn-outline-primary">
+                        Details
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

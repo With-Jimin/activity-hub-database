@@ -1,0 +1,33 @@
+@model ActivityHub.Admin.Models.Post
+
+@{
+    ViewData["Title"] = "Post Details";
+}
+
+<h1>Post Details</h1>
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">Post ID</dt>
+        <dd class="col-sm-10">@Model.PostId</dd>
+
+        <dt class="col-sm-2">Group ID</dt>
+        <dd class="col-sm-10">@Model.GroupId</dd>
+
+        <dt class="col-sm-2">Author ID</dt>
+        <dd class="col-sm-10">@Model.AuthorId</dd>
+
+        <dt class="col-sm-2">Title</dt>
+        <dd class="col-sm-10">@Model.Title</dd>
+
+        <dt class="col-sm-2">Content</dt>
+        <dd class="col-sm-10">@Model.Content</dd>
+
+        <dt class="col-sm-2">Created At</dt>
+        <dd class="col-sm-10">@Model.CreatedAt</dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</div>
