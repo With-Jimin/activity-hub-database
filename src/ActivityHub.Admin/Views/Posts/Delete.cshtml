@@ -1,0 +1,34 @@
+@model ActivityHub.Admin.Models.Post
+
+<h2 class="mb-4 text-danger">Delete Post</h2>
+
+<div class="alert alert-warning">
+    Are you sure you want to delete this post?
+</div>
+
+<div class="mb-3">
+    <strong>Post ID:</strong> @Model.PostId
+</div>
+
+<div class="mb-3">
+    <strong>Title:</strong> @Model.Title
+</div>
+
+<div class="mb-4">
+    <strong>Content:</strong><br />
+    @Model.Content
+</div>
+
+<form asp-action="Delete" method="post">
+    @Html.AntiForgeryToken()
+
+    <input type="hidden" asp-for="PostId" />
+
+    <button type="submit" class="btn btn-danger">
+        Delete
+    </button>
+
+    <a asp-action="Index" class="btn btn-secondary">
+        Cancel
+    </a>
+</form>
