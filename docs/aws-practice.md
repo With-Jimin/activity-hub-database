@@ -1,4 +1,4 @@
-# AWS Practice (Day 9)
+# AWS Practice
 
 ## Goal
 Learn the basic concepts of AWS cloud services and practice using EC2 and S3.
